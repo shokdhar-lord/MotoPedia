@@ -71,13 +71,7 @@ const bikes = [
     type: "Cruiser",
     image: "images/iron883.jfif"
 },
-{
-    brand: "Harley-Davidson",
-    model: "Iron 883",
-    year: 2009,
-    cc: 883,
-    type: "Cruiser",
-    image: "images/iron883.jfif"
-},
+
 
 ];
+
