@@ -1,6 +1,5 @@
 const container = document.getElementById("bikeContainer");
 
-// 🔹 Display Bikes
 function displayBikes(bikesToShow) {
     container.innerHTML = "";
 
@@ -31,7 +30,6 @@ function displayBikes(bikesToShow) {
     });
 }
 
-// 🔹 Category Filter
 function filterCategory(category) {
     if (category === "All") {
         displayBikes(bikes);
@@ -41,7 +39,6 @@ function filterCategory(category) {
     }
 }
 
-// 🔹 Search Filter
 document.getElementById("searchInput").addEventListener("input", function() {
     const value = this.value.toLowerCase();
 
@@ -53,5 +50,4 @@ document.getElementById("searchInput").addEventListener("input", function() {
     displayBikes(filtered);
 });
 
-// 🔹 Show All Bikes Initially
 displayBikes(bikes);
