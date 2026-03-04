@@ -77,7 +77,6 @@ const bikes = [
   year: 2023,
   cc: 1099,
   type: "Sports",
-  image: "images/aprilia-rsv4.jpg"
 },
 {
   brand: "MV Agusta",
@@ -225,5 +224,6 @@ const bikes = [
 }
 
 ];
+
 
 
