@@ -5,7 +5,7 @@ function displayBikes(bikesToShow) {
 
     if (!bikesToShow || bikesToShow.length === 0) {
         const message = document.createElement("h2");
-        message.textContent = "❌ Result Not Found";
+        message.textContent = " Bikes Not Found";
         message.style.color = "red";
         message.style.textAlign = "center";
         message.style.marginTop = "20px";
@@ -50,4 +50,5 @@ document.getElementById("searchInput").addEventListener("input", function() {
 });
 
 displayBikes(bikes);
+
 
