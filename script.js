@@ -1,7 +1,30 @@
 const container = document.getElementById("bikeContainer");
 
-function displayBikes(bikeList) {
+function displayBikes(bikesToShow) {
+    const container = document.getElementById("bikeContainer");
     container.innerHTML = "";
+
+    // 🔴 If no bikes found
+    if (bikesToShow.length === 0) {
+        container.innerHTML = `
+            <h2 style="color:red; text-align:center;">
+                ❌ Result Not Found
+            </h2>
+        `;
+        return;
+    }
+
+    // 🟢 If bikes exist
+    bikesToShow.forEach(bike => {
+        container.innerHTML += `
+            <div class="bike-card">
+                <img src="${bike.image}" width="200">
+                <h3>${bike.brand} ${bike.model}</h3>
+                <p>${bike.year} • ${bike.cc}cc • ${bike.type}</p>
+            </div>
+        `;
+    });
+}
 
     bikeList.forEach(bike => {
         const card = document.createElement("div");
@@ -37,4 +60,5 @@ document.getElementById("searchInput").addEventListener("input", function() {
         bike.model.toLowerCase().includes(value)
     );
     displayBikes(filtered);
+
 });
