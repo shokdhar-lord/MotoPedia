@@ -102,7 +102,7 @@ const bikes = [
   cc: 750,
   type: "Sports",
   image: "images/gsxr750.jpg"
-}
+},
 {
   brand: "Triumph",
   model: "Tiger 900",
@@ -134,7 +134,7 @@ const bikes = [
   cc: 1158,
   type: "Adventure",
   image: "images/multistrada.jpg"
-}
+},
 {
   brand: "Indian",
   model: "Scout Bobber",
@@ -166,7 +166,7 @@ const bikes = [
   cc: 648,
   type: "Cruiser",
   image: "images/supermeteor.jpg"
-}
+},
 {
   brand: "Yamaha",
   model: "MT-09",
@@ -198,7 +198,7 @@ const bikes = [
   cc: 937,
   type: "Naked",
   image: "images/monster.jpg"
-}
+},
 {
   brand: "Zero",
   model: "SR/F",
@@ -225,4 +225,5 @@ const bikes = [
 }
 
 ];
+
 
