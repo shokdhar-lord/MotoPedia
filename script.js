@@ -3,17 +3,16 @@ const container = document.getElementById("bikeContainer");
 function displayBikes(bikesToShow) {
     container.innerHTML = "";
 
-    // ❌ If no bikes found
-    if (bikesToShow.length === 0) {
-        container.innerHTML = `
-            <h2 style="color:red; text-align:center;">
-                ❌ Result Not Found
-            </h2>
-        `;
+    if (!bikesToShow || bikesToShow.length === 0) {
+        const message = document.createElement("h2");
+        message.textContent = "❌ Result Not Found";
+        message.style.color = "red";
+        message.style.textAlign = "center";
+        message.style.marginTop = "20px";
+        container.appendChild(message);
         return;
     }
 
-    // ✅ If bikes exist
     bikesToShow.forEach(bike => {
         const card = document.createElement("div");
         card.classList.add("bike-card");
@@ -51,3 +50,4 @@ document.getElementById("searchInput").addEventListener("input", function() {
 });
 
 displayBikes(bikes);
+
