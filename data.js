@@ -77,6 +77,7 @@ const bikes = [
   year: 2023,
   cc: 1099,
   type: "Sports",
+  image:"DSC-7910-2.jpg"
 },
 {
   brand: "MV Agusta",
@@ -217,6 +218,14 @@ const bikes = [
 {
   brand: "Energica",
   model: "Ego",
+  year: 2023,
+  cc: 0,
+  type: "Electric",
+  image: "images/energicaego.jpg"
+},
+{
+  brand: "yui",
+  model: "er",
   year: 2023,
   cc: 0,
   type: "Electric",
