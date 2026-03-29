@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>MotoPedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>MotoPedia</h1>
-    <p>Explore Every Bike Ever Built</p>
-</header>
+    <header>
+        <h1 class="creative-title">Moto<span class="highlight">Pedia</span></h1>
+        <p class="subtitle">Explore Every Bike Ever Built</p>
+    </header>
 
-<section class="search-section">
-    <input type="text" id="searchInput" placeholder="Search bikes...">
-</section>
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search bikes...">
+    </section>
 
-<section class="filter-section">
-    <button onclick="filterCategory('All')">All</button>
-    <button onclick="filterCategory('Sports')">Sports</button>
-    <button onclick="filterCategory('Cruiser')">Cruiser</button>
-    <button onclick="filterCategory('Adventure')">Adventure</button>
-    <button onclick="filterCategory('Electric')">Electric</button>
-    <button onclick="filterCategory('Naked')">Naked</button>
-</section>
+    <section class="filter-section">
+        <button onclick="filterCategory('All')">All</button>
+        <button onclick="filterCategory('Sports')">Sports</button>
+        <button onclick="filterCategory('Cruiser')">Cruiser</button>
+        <button onclick="filterCategory('Adventure')">Adventure</button>
+        <button onclick="filterCategory('Electric')">Electric</button>
+        <button onclick="filterCategory('Naked')">Naked</button>
+    </section>
 
-<section id="bikeContainer" class="bike-container">
-</section>
+    <section id="bikeContainer" class="bike-container">
+    </section>
 
-<script src="data.js"></script>
-<script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

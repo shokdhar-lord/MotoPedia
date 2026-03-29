@@ -13,9 +13,10 @@ function displayBikes(bikesToShow) {
         return;
     }
 
-    bikesToShow.forEach(bike => {
+    bikesToShow.forEach((bike, index) => {
         const card = document.createElement("div");
         card.classList.add("bike-card");
+        card.style.animationDelay = `${index * 0.05}s`;
 
         card.innerHTML = `
             <img src="${bike.image}" alt="${bike.model}" class="bike-img">
@@ -38,7 +39,7 @@ function filterCategory(category) {
     }
 }
 
-document.getElementById("searchInput").addEventListener("input", function() {
+document.getElementById("searchInput").addEventListener("input", function () {
     const value = this.value.toLowerCase();
 
     const filtered = bikes.filter(bike =>
