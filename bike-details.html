@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Details - MotoPedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .details-container {
+            max-width: 1000px;
+            margin: 100px auto 50px;
+            padding: 30px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .details-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .details-image img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ff0055;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.4);
+        }
+
+        .details-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .details-info h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            background: linear-gradient(90deg,
+                    #FF00FF, #FF3131, #FF5E00, #FAED27, #39FF14, #00FFFF, #04D9FF, #B026FF, #FF00FF);
+            background-size: 800% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradientShift 6s linear infinite;
+        }
+
+        .details-info h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #ccc;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .spec-item {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .spec-label {
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: transparent;
+            color: #ff0055;
+            border: 2px solid #ff0055;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background: #ff0055;
+            color: white;
+            box-shadow: 0 0 15px #ff0055;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" style="font-family:'Orbitron', sans-serif; font-size:2rem; font-weight:bold; color:white;">
+            Moto<span style="color:#ff0055;">Pedia</span></div>
+    </header>
+
+    <div id="detailsContent">
+        <!-- Content injected by JS -->
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MotoPedia. Created by Vinay Bhandari G</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="details.js"></script>
+</body>
+
+</html>

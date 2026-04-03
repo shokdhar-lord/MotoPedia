@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>MotoPedia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,6 +36,51 @@
 
     <section id="bikeContainer" class="bike-container">
     </section>
+
+    <!-- Filter Menu & FAB -->
+    <div id="filterMenu" class="filter-menu">
+        <h3>Filter Options</h3>
+
+        <label for="ccFilter">CC Filter:</label>
+        <select id="ccFilter">
+            <option value="all">All CC</option>
+            <option value="under500">Under 500cc</option>
+            <option value="500to1000">500cc - 1000cc</option>
+            <option value="over1000">Over 1000cc</option>
+        </select>
+
+        <label for="yearFilter">Year Filter:</label>
+        <select id="yearFilter">
+            <option value="all">All Years</option>
+            <option value="before2015">Before 2015</option>
+            <option value="2015to2020">2015 - 2020</option>
+            <option value="after2020">After 2020</option>
+        </select>
+
+        <label for="priceFilter">Price Filter:</label>
+        <select id="priceFilter">
+            <option value="all">All Prices</option>
+            <option value="under5L">Under ₹5 Lakh</option>
+            <option value="5Lto15L">₹5 Lakh - ₹15 Lakh</option>
+            <option value="over15L">Over ₹15 Lakh</option>
+        </select>
+
+        <button id="closeFilterBtn">Close & Apply</button>
+    </div>
+
+    <button id="fabFilterBtn" class="fab-filter-btn"
+        style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Filter Funnel -->
+            <polygon points="3 4 14 4 10 11 10 19 7 19 7 11 3 4"></polygon>
+            <!-- 3 Lines to the right -->
+            <line x1="16" y1="12" x2="21" y2="12"></line>
+            <line x1="15" y1="16" x2="21" y2="16"></line>
+            <line x1="14" y1="20" x2="21" y2="20"></line>
+        </svg>
+        Filter
+    </button>
 
     <footer>
         <p>&copy; 2026 MotoPedia. Created by Vinay Bhandari G</p>
